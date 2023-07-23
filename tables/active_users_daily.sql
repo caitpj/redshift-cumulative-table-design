@@ -1,4 +1,4 @@
-create table scratchpad.data_eng.cai_test_active_users_cumulated (
+create table database_name.schema_name.active_users_daily (
     user_id integer,
     is_active_today integer,
     num_likes integer,
@@ -8,7 +8,7 @@ create table scratchpad.data_eng.cai_test_active_users_cumulated (
 )
 ;
 
-insert into scratchpad.data_eng.cai_test_active_users_cumulated values
+insert into database_name.schema_name.active_users_daily values
 (1, 1, 1, 0, 0, '2023-01-01'),
 (1, 1, 1, 0, 0, '2023-01-02'),
 (1, 1, 1, 0, 0, '2023-01-03'),
@@ -42,5 +42,5 @@ insert into scratchpad.data_eng.cai_test_active_users_cumulated values
 (2, 1, 1, 0, 0, '2023-01-30')
 ;
 
-select * from scratchpad.data_eng.cai_test_active_users_cumulated
+select * from database_name.schema_name.active_users_daily
 ;
