@@ -5,7 +5,6 @@ create table database_name.schema_name.events(
 )
 ;
 
-
 insert into database_name.schema_name.events values
     (1, 'like', '2023-01-01'),
     (1, 'like', '2023-01-02'),
@@ -18,7 +17,6 @@ insert into database_name.schema_name.events values
     (2, 'share', '2023-01-31'),
     (3, 'like', '2023-01-31')
 ;
-
 
 select * from database_name.schema_name.events
 ;
