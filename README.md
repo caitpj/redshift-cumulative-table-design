@@ -1,4 +1,6 @@
-# Cumulative Table Design
+# Redshift Cumulative Table Design
+
+This is a fork of @EcZachly brilliant [cumulative-table-design](https://github.com/EcZachly/cumulative-table-design) repo. The difference between this repo and the original is this uses AWS Redshift syntax and functions, rather than Presto/Trino. As well as adding a few improvements, which allow the reader to more easily implement the design example. For example, including code for inserting mock data into the events table, and adding the final aggregation SQL to the design.
 
 Cumulative table design is an extremely powerful data engineering tool that all data engineers should know. 
 
@@ -18,11 +20,11 @@ These metric arrays allow us to easily answer queries about the history of all u
 
 ## Example User activity and engagement cumulated
 
-> All query syntax is using Presto/Trino syntax and functions. This example would need to be modified for other SQL variants!
+> All query syntax is using AWS Redshift syntax and functions. This example would need to be modified for other SQL variants!
 > 
 > We'll be using the dates:
->  - **2022-01-01** as **today** in Airflow terms this is `{{ ds }}`
->  - **2021-12-31** as **yesterday** in Airflow templating terms this is `{{ yesterday_ds}}`
+>  - **2023-01-31** as **today** in Airflow terms this is `{{ ds }}`
+>  - **2023-01-30** as **yesterday** in Airflow templating terms this is `{{ yesterday_ds}}`
 
 
 In this example, we'll be looking into how to build this design for calculate daily, weekly and monthly active users as well as the users likes, comments, and shares. 
