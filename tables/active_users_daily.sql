@@ -8,6 +8,7 @@ create table database_name.schema_name.active_users_daily (
 )
 ;
 
+-- Inserting data post 2023-01-30 run, and pre 2023-01-31 run 
 insert into database_name.schema_name.active_users_daily values
 (1, 1, 1, 0, 0, '2023-01-01'),
 (1, 1, 1, 0, 0, '2023-01-02'),
