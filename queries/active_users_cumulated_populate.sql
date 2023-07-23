@@ -1,3 +1,4 @@
+TODO
 INSERT INTO active_users_cumulated
 
 -- First read in yesterday from the cumulated table
