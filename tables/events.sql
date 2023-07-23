@@ -5,7 +5,7 @@ create table database_name.schema_name.events(
 )
 -- Sort key is important since we only want to scan the most recent event_date for each run
 sortkey
-    (event_date);
+    (event_date)
 ;
 
 insert into database_name.schema_name.events values
