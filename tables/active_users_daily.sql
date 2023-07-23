@@ -6,6 +6,9 @@ create table database_name.schema_name.active_users_daily (
     num_shares integer,
     snapshot_date date
 )
+-- Sort key is important since we only want to scan the most recent event_date for each run
+sortkey
+    (event_date)
 ;
 
 -- Inserting data post 2023-01-30 run, and pre 2023-01-31 run 
