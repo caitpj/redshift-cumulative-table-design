@@ -1,6 +1,6 @@
 # Redshift Cumulative Table Design
 
-This is a fork of @EcZachly brilliant [cumulative-table-design](https://github.com/EcZachly/cumulative-table-design) repo. The difference between this repo and the original are the following:
+This is a fork repository of @EcZachly brilliant [cumulative-table-design](https://github.com/EcZachly/cumulative-table-design) repo. The difference between this repo and the original are the following:
 - This repo uses AWS Redshift syntax and functions, rather than Presto/Trino.
 - This repo includes mock data, found in the 'tables' .sql files. This allows the reader to more easily implement the design example.
 - This repo includes a final query that aggregates the user data to something you'd expect in a front-end data model. 
