@@ -1,4 +1,4 @@
-insert into scratchpad.data_eng.cai_test_active_users_daily (
+insert into database_name.schema_name.active_users_daily (
     select
         user_id,
         -- If the user_id has at least 1 event, they are daily active
@@ -7,11 +7,11 @@ insert into scratchpad.data_eng.cai_test_active_users_daily (
         count(case when event_type = 'comment' then 1 END) as num_comments,
         count(case when event_type = 'share' then 1 END) as num_shares,
         '2023-01-31' as snapshot_date
-    from scratchpad.data_eng.cai_test_events
+    from database_name.schema_name.events
     where event_date = '2023-01-31'
     group by user_id
 )
 ;
 
-select * from scratchpad.data_eng.cai_test_active_users_daily
+select * from database_name.schema_name.active_users_daily
 ;
